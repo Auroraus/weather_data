@@ -2,7 +2,7 @@
 """
 Created on Tue Nov 14 22:42:43 2017
 
-@author: Administrator
+@author: zf
 """
 
 import time
@@ -147,7 +147,6 @@ def start():
                         sheet.write(n,5,k['humidity'])
                         sheet.write(n,6,k['pressure'])
                         sheet.write(n,7,k['windSpeed'])
-                        print(k['windSpeed'])
                         n=n+1
         except:
             pass
