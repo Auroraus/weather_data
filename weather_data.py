@@ -66,7 +66,7 @@ input110.set('32074fb694acf1bb183c4d6f07c13352')#输入框预设值
 xen110.pack()#使用户输入框生效
 
 def say():
-    sayword='杜永封，您好，欢迎您使用本程序，利用本程序您可以获取你想要的气象数据。注意输入目标地的经纬度【精确至小数点后三位】，祝您使用愉快，若有技术问题，请发到我的邮箱：zf083415@gmail.com'
+    sayword='您好，欢迎您使用本程序，利用本程序您可以获取你想要的气象数据。注意输入目标地的经纬度【精确至小数点后三位】，祝您使用愉快，若有技术问题，请发到我的邮箱：zf083415@gmail.com'
     s = win32com.client.Dispatch("SAPI.SpVoice")
     s.Speak(sayword)
     time.sleep(1)
@@ -153,6 +153,6 @@ def start():
   
   if(n>2):
       w.save(weizhi)
-      messagebox.showinfo('提示：数据爬取完成，在',weizhi)
+      messagebox.showinfo('提示','：数据爬取完成，在'+weizhi)
 tkinter.Button(r,text=("开始爬取"),command=start,width=10,height=1).pack()      
 r.mainloop()      
